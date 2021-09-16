@@ -1,9 +1,15 @@
 import React from 'react';
-import {ContadorScree} from './src/screens/ContadorScree';
+import {SafeAreaView} from 'react-native';
+import {BoxObjectModelScreen} from './src/screens/BoxObjectModelScreen';
+//import {ContadorScree} from './src/screens/ContadorScree';
 //import {HolaMundoScreen} from './src/screens/HolaMundoScreen';
 
 export const App = () => {
-  return <ContadorScree />;
+  return (
+    <SafeAreaView>
+      <BoxObjectModelScreen />
+    </SafeAreaView>
+  );
 };
 
 /* npx react-native run-android */
